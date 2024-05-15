@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valery Bakery</title>
+    <style>
+        /* CSS untuk styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ea30d8;
+        }
+
+        header {
+            background-color: #d807c7;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #9c158f;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        section {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .product {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 10px;
+            width: calc(30% - 20px); /* 30% lebar layar dengan jarak margin 10px */
+            background-color: #fff;
+            padding-bottom: 10;
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 5px;
+        }
+
+        footer {
+            background-color: #9c158f;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* CSS untuk responsif */
+        @media (max-width: 768px) {
+            .product {
+                width: calc(50% - 20px); /* 50% lebar layar dengan jarak margin 10px */
+            }
+        }
+
+        @media (max-width: 480px) {
+            .product {
+                width: calc(100% - 20px); /* 100% lebar layar dengan jarak margin 10px */
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>BlissFull Store</h1>
+</header>
+
+<nav>
+    <a href="#">Beranda</a>
+    <a href="#">Produk</a>
+    <a href="#">Keranjang</a>
+    <a href="#">Kontak</a>
+</nav>
+
+<!-- konten produk -->
+<section>
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1490481651871-ab68de25d43d?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kue 1">
+        <h2>Clothing Wanita</h2>
+        <h4>Kami menyediakan beberapa pakaian wanita yang cocok untuk kehidupan sehari hari</h4>
+        <p>Harga: Rp 350.000</p>
+        <button><a href="https://wa.me/6285316355834?text=Bliss Full Store saya mau beli Baju" style="text-decoration: none;">Beli Sekarang</a></button>
+    </div>
+
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1445205170230-053b83016050?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGZhc2hpb258ZW58MHx8MHx8fDA%3D" alt="Kue 2">
+        <h2>Clothing Pria</h2>
+        <h4>Kami juga menyediakan pakaian pria bagi yang suka vintage sama formal</h4>
+        <p>Harga: Rp 300.000</p>
+        <button><a href="https://wa.me/6285316355834?text=Bliss Full Store saya mau beli Baju" style="text-decoration: none;">Beli Sekarang</a></button>
+    </div>
+    
+    <div class="product">
+        <img src="https://plus.unsplash.com/premium_photo-1673502751768-586478eb3fcb?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kue 3" width="100%">
+        <h2>Celana</h2>
+        <h4>Selain pakaian kami juga menyediakan bebagai celana yang bisa di padukan dengan pakain yang ada di atas</h4>
+        <p>Harga: Rp 150.000</p>
+        <button><a href="https://wa.me/6285316355834?text=Bliss Full Store saya mau beli celana" style="text-decoration: none;">Beli Sekarang</a></button>
+    </div>
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1604882767135-b41fac508fff?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kue 3" width="100%">
+        <h2>Cardigan</h2>
+        <h4>Selain pakaian kami juga menyediakan bebagai cardigan yang bisa di padukan dengan pakain agar terlihat lebih fashionable</h4>
+        <p>Harga: Rp 250.000</p>
+        <button><a href="https://wa.me/6285316355834?text=Bliss Full Store saya mau beli cardigan" style="text-decoration: none;">Beli Sekarang</a></button>
+    </div>
+    <div class="product">
+        <img src="https://plus.unsplash.com/premium_photo-1708633003240-569a6135deaa?q=80&w=1468&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kue 3" width="100%">
+        <h2>Casual</h2>
+        <h4>Bagi yang suka casual kami juga menyediakan beberapa product casual seperti yang ada di gambar</h4>
+        <p>Harga: Rp 1.500.000</p>
+        <button><a href="https://wa.me/6285316355834?text=Bliss Full Store saya mau beli Casual Fashion" style="text-decoration: none;">Beli Sekarang</a></button>
+    </div>
+    <div class="product">
+        <img src="https://images.unsplash.com/photo-1529720317453-c8da503f2051?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Kue 3" width="100%">
+        <h2>Kaos Polos</h2>
+        <h4>Bagi yang mau bangun usaha kami juga menyediakan kaos kaos polos untuk kalian bisa desain model sendiri...</h4>
+        <p>Harga: Rp 100.000</p>
+        <button><a href="https://wa.me/6285316355834?text=Bliss Full Store saya mau beli Casual Fashion" style="text-decoration: none;">Beli Sekarang</a></button>
+    </div>
+</section>
+<!-- end konten -->
+
+<!-- start footer -->
+<footer>
+    <p>Lindarahmawati22@gmail.com</p>
+    <p>copy Right © 2024 BlissFull Store. All Right Reserved.</p>
+</footer>
+<!-- end footer -->
+</body>
+</html>
